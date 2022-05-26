@@ -20,6 +20,10 @@
         public function getLastname(){
             return $this->lastname;
         }
+
+        public function getDiscount(){
+            return $this->discount;
+        }
     }
 
     class RegisteredUser extends User{

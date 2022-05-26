@@ -20,9 +20,9 @@
 
         public function isValid(){
             if($this->expire_date < date('m/Y')){
-                return 'Your credit card is not valid, Expired';
+                return '<h6>Your credit card is not valid, Expired</h6>';
             }else{
-                return 'Your credit card Accepted';
+                return '<h6>Your credit card Accepted</h6>';
             }
         }
 
