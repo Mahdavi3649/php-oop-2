@@ -2,7 +2,7 @@
 
     class User {
 
-        use Position;
+        use Info;
 
         public $name;
         public $lastname;
@@ -37,16 +37,14 @@
             parent:: __construct($name, $lastname, $email);
             $this->discount = $discount = 20;
         }
-
     }
 
-    
-    trait Position
+    trait Info
     {
         public $originalita;
         public $age;
 
-        public function getAddress($originalita,$age)
+        public function getInfo($originalita,$age)
         {
              $this->originalita = $originalita;
              $this->age = $age;
