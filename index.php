@@ -21,7 +21,7 @@ require_once __DIR__ . '/Models/Creditcard.php';
  //var_dump($user);
 
 //utente registrato con 20% di sconto
- $registeredUser = new RegisteredUser('jack', 'Nilson', 'j-nilson@gmail.com');
+ $registeredUser = new RegisteredUser('jack', 'Nilson', 'j-nilson@gmail.com', 20);
  //var_dump($registeredUser);
 
 
