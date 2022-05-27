@@ -1,4 +1,5 @@
 <?php
+   
 
     class User {
 
@@ -40,18 +41,33 @@
     }
 
     trait Info
-    {
-        public $originalita;
-        public $age;
+ {
+     public $originalita;
+     public $age;
 
-        public function getInfo($originalita,$age)
-        {
-             $this->originalita = $originalita;
-             $this->age = $age;
-            return $originalita . $age; 
-        }
-        
+     public function getInfo(String $originalita, int $age)
+     {
+          $this->originalita = $originalita;
+          $this->age = $age;
+         return $originalita . $age; 
+     }
+
+ }
+   
+
+    function multiplication($int)
+    {
+    if (!is_int($int)) {
+        throw new Exception('Is not a number');
+    }
+    return $int * 5;
     }
     
+
+    try {
+        multiplication('Hi there');
+      } catch (Exception $e) {
+        echo $e->getMessage();
+      }
 
 ?>
